@@ -6,3 +6,10 @@
 //
 
 import Foundation
+@testable import CategoryApp
+
+class MockFailureCategoryListService: CategoryListServiceContract {
+    func loadCategories() async -> Result<CategoryApp.CategoryListResponse, Error> {
+        return .failure(NetworkError.invalidURL)
+    }
+}
