@@ -6,3 +6,10 @@
 //
 
 import Foundation
+@testable import CategoryApp
+
+class MockLoadCategoryDetailsUseCaseSuccess: LoadCategoryDetailsUseCaseContract {
+    func execute(id: String) async -> Result<CategroyDetailsListResponse, Error> {
+        .success(MockData.categoryDetailsListResponse)
+    }
+}

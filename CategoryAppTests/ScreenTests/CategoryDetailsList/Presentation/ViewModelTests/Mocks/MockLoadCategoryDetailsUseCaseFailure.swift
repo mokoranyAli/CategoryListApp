@@ -6,3 +6,10 @@
 //
 
 import Foundation
+@testable import CategoryApp
+
+class MockLoadCategoryDetailsUseCaseFailure: LoadCategoryDetailsUseCaseContract {
+    func execute(id: String) async -> Result<CategroyDetailsListResponse, Error> {
+        .failure(NetworkError.invalidURL)
+    }
+}
