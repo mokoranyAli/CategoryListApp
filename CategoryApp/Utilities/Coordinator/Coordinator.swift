@@ -5,4 +5,13 @@
 //  Created by Mohamed Korany Ali on 02/12/2023.
 //
 
-import Foundation
+import UIKit
+
+protocol Coordinator {
+    
+    /// Root navigation controller of the coordinator.
+    var navigationController: UINavigationController { get }
+    
+    /// Starts job of the coordinator.
+    func start()
+}
