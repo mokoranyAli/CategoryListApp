@@ -1,6 +1,6 @@
 //
-//  CategoryAppUITests.swift
-//  CategoryAppUITests
+//  SplashScreenView.swift
+//  CategoryApp
 //
 //  Created by Mohamed Korany Ali on 02/12/2023.
 //

@@ -1,6 +1,6 @@
 //
-//  CategoryAppUITests.swift
-//  CategoryAppUITests
+//  UITestingHelper.swift
+//  CategoryApp
 //
 //  Created by Mohamed Korany Ali on 02/12/2023.
 //
