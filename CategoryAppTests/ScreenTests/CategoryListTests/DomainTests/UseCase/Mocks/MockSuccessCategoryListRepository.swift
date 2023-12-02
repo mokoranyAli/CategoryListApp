@@ -6,3 +6,10 @@
 //
 
 import Foundation
+@testable import CategoryApp
+
+class MockSuccessCategoryListRepository: CategoryListRepositoryContract {
+    func loadCategories() async -> Result<CategoryApp.CategoryListResponse, Error> {
+        return .success(MockData.categoryListResponse)
+    }
+}
