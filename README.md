@@ -11,6 +11,8 @@
 ## Overview
 
 App to show category list and every item in list has name, image and icon, then you can go to category details screen to see list of items inside this category, name of item, price of item, image of item and button to add item.
+
+
 Note: This task is implemented in less than 24 hours
 
 ## Networking
