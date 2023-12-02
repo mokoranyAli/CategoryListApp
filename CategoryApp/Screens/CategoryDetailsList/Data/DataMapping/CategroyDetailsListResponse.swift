@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+// MARK: - CategroyDetailResponse
+struct CategroyDetailResponse: Decodable, Hashable {
+    let id: Int?
+    let title: String?
+    let minBudget, maxBudget, avgBudget: Int?
+    let image: String?
+}
+
+typealias CategroyDetailsListResponse = [CategroyDetailResponse]
