@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct EventSavedView: View {
+    let price: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct EventSavedView_Previews: PreviewProvider {
-    static var previews: some View {
-        EventSavedView()
+        
+        VStack {
+            ZStack {
+                Circle()
+                    .fill(Color.white)
+                
+                VStack(spacing: 18) {
+                    Text("Event Saved!")
+                    .font(
+                        Font.appFont(size: 18, weight: .black))
+                    .multilineTextAlignment(.center)
+                    
+                    Text(price)
+                    .font(
+                        Font.appFont(size: 37, weight: .black))
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.black)
+                    
+                    Image("stareFill")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40, height: 40)
+                }
+            }.padding(50)
+        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.background)
+            .navigationBarBackButtonHidden(true)
     }
 }
