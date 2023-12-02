@@ -14,7 +14,7 @@ App to show category list and every item in list has name, image and icon, then 
 
 ## Networking
 
-Netwroking applied in APIService file using just URLSession with async await approach.
+Netwroking is implemented in APIService file using just URLSession with async await approach.
 
 
 ## Architecture
